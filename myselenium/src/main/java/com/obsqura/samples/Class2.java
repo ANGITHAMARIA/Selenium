@@ -61,15 +61,27 @@ public class Class2 {
 //		tag.click();
 		
 		//Element locator by xpath
-		WebElement xpath1=driver.findElement(By.xpath("//input[@id='001']"));
-		xpath1.sendKeys("Angitha");
-		WebElement xpath2=driver.findElement(By.xpath("//input[@class='class3']"));
-		xpath2.click();
-		WebElement xpath3=driver.findElement(By.xpath("//input[@name='D']"));
-		xpath3.click();
-		WebElement xpath4=driver.findElement(By.xpath("//input[@value='OK']"));
-		xpath4.click();
-		WebElement xpath5=driver.findElement(By.xpath("//a[@href=\"https://www.google.com\"]"));
-		xpath5.click();
+//		WebElement xpath1=driver.findElement(By.xpath("//input[@id='001']"));
+//		xpath1.sendKeys("Angitha");
+//		WebElement xpath2=driver.findElement(By.xpath("//input[@class='class3']"));
+//		xpath2.click();
+//		WebElement xpath3=driver.findElement(By.xpath("//input[@name='D']"));
+//		xpath3.click();
+//		WebElement xpath4=driver.findElement(By.xpath("//input[@value='OK']"));
+//		xpath4.click();
+//		WebElement xpath5=driver.findElement(By.xpath("//a[@href=\"https://www.google.com\"]"));
+//		xpath5.click();
+		
+		//Element locator by css selector
+		WebElement css1=driver.findElement(By.cssSelector("input[id='001']"));
+		css1.sendKeys("Angitha");
+		WebElement css2=driver.findElement(By.cssSelector("input[class='class3']"));
+		css2.click();
+		WebElement css3=driver.findElement(By.cssSelector("input[name='D']"));
+		css3.click();
+		WebElement css4=driver.findElement(By.cssSelector("input[value='OK']"));
+		css4.click();
+		WebElement css5=driver.findElement(By.cssSelector("a[href=\"https://www.google.com\"]"));
+		css5.click();		
 	}
 }
