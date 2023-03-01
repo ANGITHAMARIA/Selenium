@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10796" started-at="2023-03-01T08:30:05Z" finished-at="2023-03-01T08:30:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="10796" started-at="2023-03-01T08:30:05Z" finished-at="2023-03-01T08:30:16Z">
+      <class name="com.obsqura.samples.Uitest">
+        <test-method status="PASS" signature="browserOpen()[pri:0, instance:com.obsqura.samples.Uitest@25bbe1b6]" name="browserOpen" is-config="true" duration-ms="10156" started-at="2023-03-01T14:00:05Z" finished-at="2023-03-01T14:00:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserOpen -->
+        <test-method status="PASS" signature="applicationForm()[pri:0, instance:com.obsqura.samples.Uitest@25bbe1b6]" name="applicationForm" duration-ms="610" started-at="2023-03-01T14:00:15Z" finished-at="2023-03-01T14:00:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationForm -->
+      </class> <!-- com.obsqura.samples.Uitest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
