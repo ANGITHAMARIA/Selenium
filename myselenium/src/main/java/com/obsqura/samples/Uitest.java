@@ -34,8 +34,8 @@ public void applicationForm()
 	soft.assertTrue(firstname.isDisplayed(),"Firstname displayed");
 	WebElement lastname=driver.findElement(By.xpath("//input[@id='lastname']"));
 	lastname.sendKeys("Thomas");
-	//soft.assertTrue(lastname.isDisplayed(),"lastname displayed");
-	soft.assertFalse(lastname.isDisplayed(),"lastname displayed");
+	soft.assertTrue(lastname.isDisplayed(),"lastname displayed");
+	//soft.assertFalse(lastname.isDisplayed(),"lastname displayed");
 	System.out.println(lastname.isDisplayed());
 //	WebElement maritalstatus=driver.findElement(By.xpath("//input[@name=\"optradio\"]"));
 //	maritalstatus.click();
