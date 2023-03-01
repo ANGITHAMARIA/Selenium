@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class Class2 {
 
@@ -73,15 +74,22 @@ public class Class2 {
 //		xpath5.click();
 		
 		//Element locator by css selector
-		WebElement css1=driver.findElement(By.cssSelector("input[id='001']"));
-		css1.sendKeys("Angitha");
-		WebElement css2=driver.findElement(By.cssSelector("input[class='class3']"));
-		css2.click();
-		WebElement css3=driver.findElement(By.cssSelector("input[name='D']"));
-		css3.click();
-		WebElement css4=driver.findElement(By.cssSelector("input[value='OK']"));
-		css4.click();
-		WebElement css5=driver.findElement(By.cssSelector("a[href=\"https://www.google.com\"]"));
-		css5.click();		
+//		WebElement css1=driver.findElement(By.cssSelector("input[id='001']"));
+//		css1.sendKeys("Angitha");
+//		WebElement css2=driver.findElement(By.cssSelector("input[class='class3']"));
+//		css2.click();
+//		WebElement css3=driver.findElement(By.cssSelector("input[name='D']"));
+//		css3.click();
+//		WebElement css4=driver.findElement(By.cssSelector("input[value='OK']"));
+//		css4.click();
+//		WebElement css5=driver.findElement(By.cssSelector("a[href=\"https://www.google.com\"]"));
+//		css5.click();
+		
+		//multiple selection in dropdown
+		WebElement dropdown =driver.findElement(By.id("dropdown"));
+		Select list=new Select(dropdown);
+		list.selectByVisibleText("India");
+		list.selectByVisibleText("USA");
+		list.selectByIndex(3);
 	}
 }

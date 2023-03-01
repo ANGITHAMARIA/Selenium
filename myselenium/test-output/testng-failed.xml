@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.obsqura.samples.AssertSamples">
+      <class name="com.obsqura.samples.Uitest">
         <methods>
+          <include name="browserOpen"/>
+          <include name="applicationForm"/>
           <include name="closeBrowser"/>
-          <include name="browserLaunch"/>
-          <include name="test1"/>
         </methods>
-      </class> <!-- com.obsqura.samples.AssertSamples -->
+      </class> <!-- com.obsqura.samples.Uitest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

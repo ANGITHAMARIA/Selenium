@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -34,8 +35,9 @@ public void applicationForm()
 	soft.assertTrue(firstname.isDisplayed(),"Firstname displayed");
 	WebElement lastname=driver.findElement(By.xpath("//input[@id='lastname']"));
 	lastname.sendKeys("Thomas");
-	soft.assertTrue(lastname.isDisplayed(),"lastname displayed");
-	//soft.assertFalse(lastname.isDisplayed(),"lastname displayed");
+	//soft.assertTrue(lastname.isDisplayed(),"lastname displayed");
+	//soft.assertFalse(lastname.isDisplayed(),"lastname missing");
+	//Assert.assertFalse(lastname.isDisplayed(),"lastname displayed");
 	System.out.println(lastname.isDisplayed());
 //	WebElement maritalstatus=driver.findElement(By.xpath("//input[@name=\"optradio\"]"));
 //	maritalstatus.click();
@@ -47,5 +49,12 @@ public void applicationForm()
 	Select list=new Select(country);
 	list.selectByVisibleText("Bahrain");
 	soft.assertTrue(country.isDisplayed(),"Country name displayed");
+}
+
+@AfterTest
+public void closeBrowser() throws InterruptedException
+{
+	Thread.sleep(3000);
+	driver.close();
 }
 }

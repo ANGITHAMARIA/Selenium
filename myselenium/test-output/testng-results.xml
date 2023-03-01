@@ -2,19 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9854" started-at="2023-03-01T08:33:11Z" finished-at="2023-03-01T08:33:21Z">
+  <suite name="Default suite" duration-ms="11495" started-at="2023-03-01T13:23:41Z" finished-at="2023-03-01T13:23:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9854" started-at="2023-03-01T08:33:11Z" finished-at="2023-03-01T08:33:21Z">
+    <test name="Default test" duration-ms="11495" started-at="2023-03-01T13:23:41Z" finished-at="2023-03-01T13:23:52Z">
       <class name="com.obsqura.samples.Uitest">
-        <test-method status="PASS" signature="browserOpen()[pri:0, instance:com.obsqura.samples.Uitest@25bbe1b6]" name="browserOpen" is-config="true" duration-ms="9263" started-at="2023-03-01T14:03:11Z" finished-at="2023-03-01T14:03:20Z">
+        <test-method status="PASS" signature="browserOpen()[pri:0, instance:com.obsqura.samples.Uitest@5702b3b1]" name="browserOpen" is-config="true" duration-ms="7748" started-at="2023-03-01T18:53:41Z" finished-at="2023-03-01T18:53:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserOpen -->
-        <test-method status="PASS" signature="applicationForm()[pri:0, instance:com.obsqura.samples.Uitest@25bbe1b6]" name="applicationForm" duration-ms="562" started-at="2023-03-01T14:03:20Z" finished-at="2023-03-01T14:03:21Z">
+        <test-method status="PASS" signature="applicationForm()[pri:0, instance:com.obsqura.samples.Uitest@5702b3b1]" name="applicationForm" duration-ms="549" started-at="2023-03-01T18:53:48Z" finished-at="2023-03-01T18:53:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applicationForm -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.obsqura.samples.Uitest@5702b3b1]" name="closeBrowser" is-config="true" duration-ms="3176" started-at="2023-03-01T18:53:49Z" finished-at="2023-03-01T18:53:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- com.obsqura.samples.Uitest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
