@@ -35,8 +35,8 @@ public void applicationForm()
 	soft.assertTrue(firstname.isDisplayed(),"Firstname displayed");
 	WebElement lastname=driver.findElement(By.xpath("//input[@id='lastname']"));
 	lastname.sendKeys("Thomas");
-	//soft.assertTrue(lastname.isDisplayed(),"lastname displayed");
-	//soft.assertFalse(lastname.isDisplayed(),"lastname missing");
+	soft.assertTrue(lastname.isDisplayed(),"lastname displayed");
+	soft.assertFalse(lastname.isDisplayed(),"lastname missing");
 	//Assert.assertFalse(lastname.isDisplayed(),"lastname displayed");
 	System.out.println(lastname.isDisplayed());
 //	WebElement maritalstatus=driver.findElement(By.xpath("//input[@name=\"optradio\"]"));
@@ -49,6 +49,7 @@ public void applicationForm()
 	Select list=new Select(country);
 	list.selectByVisibleText("Bahrain");
 	soft.assertTrue(country.isDisplayed(),"Country name displayed");
+	soft.assertAll();
 }
 
 @AfterTest
